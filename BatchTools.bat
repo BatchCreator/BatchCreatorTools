@@ -1,12 +1,30 @@
 echo off
 cls
-
-color 4
+color 1
 title Tools by BatchCreator
+@REM Start script
+
+
+echo loading .
+timeout /t 1 > NUL
+cls
+echo loading ..
+timeout /t 1 > NUL
+cls
+echo loading ...
+timeout /t 1 > NUL
+cls
+echo loading .
+timeout /t 1 > NUL
+cls
+echo loading ..
+timeout /t 1 > NUL
+cls
+echo loading ...
+timeout /t 1 > NUL
+cls
 
 goto start
-
-@REM Start script
 
 
 :start
@@ -25,7 +43,8 @@ echo.
 set choiceinput=
     set /p choiceinput= $ Make a choice : 
        if %choiceinput%==1 goto PING
-       if %choiceinput%==2 goto DOS
+       if %choiceinput%==2 goto start
+       if %choiceinput%==3 goto leave
 
 :PING
 color 3
